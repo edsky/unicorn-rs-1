@@ -1,5 +1,4 @@
 #![deny(rust_2018_idioms)]
-#![cfg_attr(not(feature = "std"), no_std)]
 
 pub mod unicorn_const;
 
@@ -96,5 +95,4 @@ impl fmt::Display for Error {
     }
 }
 
-#[cfg(feature = "std")]
 impl std::error::Error for Error {}
